@@ -1,4 +1,13 @@
-$font-family: 'Proxima Nova', 'Roboto', sans-serif;
+$white: rgb(255,255,255);
+
+$font-family: 'Proxima Nova', Helvetica, sans-serif;
+
+$toolbar-white: #fcfcfc;
+$toolbar-blue: #3b67a7;
+$toolbar-gray: rgba(0, 0, 0, 0.09);
+$toolbar-light-gray: #c9c9c9;
+$toolbar-link-color: #a9a9a9;
+$toolbar-link-join: #525252; 
 
 $button-border: rgb(24, 125, 86);
 $button-background: linear-gradient( 90deg, rgb(49,184,132) 0%, rgb(60,200,146) 100%);
