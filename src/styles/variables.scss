@@ -1,6 +1,8 @@
 $white: rgb(255,255,255);
 $toptal-blue: #3b67a7;
-$toptal-gray: #a9a9a9; 
+$toptal-light-blue: #5c88c8;
+$toptal-gray: #525252;
+$toptal-light-gray: #a9a9a9;
 $text-shadow: 0px 1px 0px rgba(0, 0, 0, 0.2);
 
 $font-family: 'Proxima Nova', Helvetica, sans-serif;
@@ -8,8 +10,13 @@ $font-family: 'Proxima Nova', Helvetica, sans-serif;
 $toolbar-white: #fcfcfc;
 $toolbar-gray: rgba(0, 0, 0, 0.09);
 $toolbar-light-gray: #c9c9c9;
-$toolbar-link-color: $toptal-gray;
-$toolbar-link-join: #525252; 
+$toolbar-link-color: $toptal-light-gray;
+$toolbar-link-join: $toptal-gray; 
+$toolbar-border-top: $toptal-light-blue 0%, $toptal-light-blue 12.5%,
+                     $toptal-blue 12.5%, $toptal-blue 37.5%,
+                     $toptal-light-blue 37.5%, $toptal-light-blue 62.5%, 
+                     $toptal-blue 62.5%, $toptal-blue 62.5%,
+                     $toptal-blue 87.5%, $toptal-light-blue 87.5%;
 
 $button-border: rgb(24, 125, 86);
 $button-background: linear-gradient( 90deg, rgb(49,184,132) 0%, rgb(60,200,146) 100%);

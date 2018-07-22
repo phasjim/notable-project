@@ -2,7 +2,11 @@
   .mat-toolbar {
     background-color: $toolbar-white;
     color: $toptal-blue;
-    border-top: dashed 4px $toptal-blue; /* 133px dashed */
+    border-top: solid 4px transparent;
+    -moz-border-image: -moz-linear-gradient(left, $toolbar-border-top);
+    -webkit-border-image: -webkit-linear-gradient(left, $toolbar-border-top);
+    border-image: linear-gradient(to right, $toolbar-border-top);
+    border-image-slice: 1;
 
     .toolbar-container {
       width: 100%;
