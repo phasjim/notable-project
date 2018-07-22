@@ -1,7 +1,10 @@
+@import 'variables';
 @import 'general';
 
-/* Defauly Material Theme */
+/* Default Material Theme */
 @import '~@angular/material/prebuilt-themes/pink-bluegrey.css';
-@import 'variables';
+
+/* Component Styles */
 @import 'button';
+@import 'footer';
 @import 'toolbar';
