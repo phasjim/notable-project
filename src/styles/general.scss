@@ -1,6 +1,9 @@
 body {
   margin: 0;
-  font-family: $font-family;
+
+  .main-content {
+    padding: 0 16px;
+  }
 }
 
 .pull-right {

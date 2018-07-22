@@ -11,12 +11,16 @@ import {
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
+import { BodyComponent } from './body/body.component';
+import { JoinToptalLeadersComponent } from './body/join-toptal-leaders/join-toptal-leaders.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
-    FooterComponent
+    FooterComponent,
+    BodyComponent,
+    JoinToptalLeadersComponent
   ],
   imports: [
     BrowserModule,

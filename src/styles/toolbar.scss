@@ -2,6 +2,7 @@
   .mat-toolbar {
     background-color: $toolbar-white;
     color: $toptal-blue;
+    border-top: dashed 4px $toptal-blue; /* 133px dashed */
 
     .toolbar-container {
       width: 100%;

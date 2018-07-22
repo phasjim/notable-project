@@ -1,5 +1,6 @@
 $white: rgb(255,255,255);
 $toptal-blue: #3b67a7;
+$toptal-gray: #a9a9a9; 
 $text-shadow: 0px 1px 0px rgba(0, 0, 0, 0.2);
 
 $font-family: 'Proxima Nova', Helvetica, sans-serif;
@@ -7,7 +8,7 @@ $font-family: 'Proxima Nova', Helvetica, sans-serif;
 $toolbar-white: #fcfcfc;
 $toolbar-gray: rgba(0, 0, 0, 0.09);
 $toolbar-light-gray: #c9c9c9;
-$toolbar-link-color: #a9a9a9;
+$toolbar-link-color: $toptal-gray;
 $toolbar-link-join: #525252; 
 
 $button-border: rgb(24, 125, 86);
