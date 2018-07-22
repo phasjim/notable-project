@@ -1,0 +1,65 @@
+.toptal-app {
+  .mat-toolbar {
+    background-color: $toolbar-white;
+    color: $toolbar-blue;
+
+    .toolbar-container {
+      width: 100%;
+    }
+    
+    .logo {
+      width: 105px;
+      height: 35px;
+      margin: 2px 0;
+    }
+
+    .first-row {
+      border-bottom: 1px solid $toolbar-gray;
+    }
+
+    a {
+      font-size: 14px;
+      font-family: $font-family;
+      color: $toolbar-link-color;
+      text-transform: uppercase;
+      text-decoration: none;
+      font-weight: bold;
+      margin: 0 7.5px;
+
+      &:hover,
+      &:visited {
+        opacity: 0.8;
+      }
+
+      &.join-toptal {
+        color: $toolbar-link-join;
+      }
+    }
+
+    .second-row {
+      color: $toolbar-light-gray;
+      font-size: 13px;
+      font-family: $font-family;
+      text-transform: uppercase;
+      line-height: 13px;
+      height: 45px;
+
+      a {
+        font-weight: normal;
+      }
+
+      .call-us {
+        color: $toolbar-link-join;
+        font-weight: bold;
+
+        a {
+          color: $toolbar-link-join;
+          font-weight: bold;
+          text-decoration: underline;
+          text-decoration-color: $toolbar-light-gray;
+        }
+      }
+    }
+    
+  }
+}
