@@ -8,6 +8,8 @@
     border-image: linear-gradient(to right, $toolbar-border-top);
     border-image-slice: 1;
 
+    min-width: 320px;
+
     .toolbar-container {
       width: 100%;
     }
@@ -20,6 +22,7 @@
 
     .first-row {
       border-bottom: 1px solid $toolbar-gray;
+      min-width: 320px;
     }
 
     a {
@@ -64,5 +67,18 @@
       }
     }
     
+  }
+
+  .responsive-option {
+    border-bottom: 1px solid $toolbar-gray;
+    padding: 10px 16px;
+    background-color: $toolbar-white;
+    text-align: center;
+
+    a {
+      text-transform: uppercase;
+      color: $toptal-gray;
+      text-decoration: none;
+    }
   }
 }

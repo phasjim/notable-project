@@ -8,27 +8,72 @@
         </div>
       </div>
       <div class="pull-right"
+           fxHide.xs="true"
            fxFlex>
         <a href="">Sign In</a>
         <a class="join-toptal" href="">Join Toptal</a>
         <button mat-button>Company</button>
         <button mat-button>Developer</button>
       </div>
+
+      <!-- Responsive Sign In / Join / Company / Developer -->
+      <div class="pull-right"
+           fxHide
+           fxHide.xs="false"
+           fxFlex>
+        <a (click)="onDisplayMenuClick(true)" *ngIf="!isMenuDisplayed"><span class="fas fa-fw fa-lg fa-bars"></span></a>
+        <a (click)="onDisplayMenuClick(false)" *ngIf="isMenuDisplayed"><span class="fas fa-fw fa-lg fa-times"></span></a>
+      </div>
     </div>
   </mat-toolbar-row>
 
-  <mat-toolbar-row class="second-row">
+  <mat-toolbar-row class="second-row" fxHide.xs="true">
     <div class="toolbar-container"
          fxLayout="row">
-      <div fxFlex>
-        <a id="why" href="">Why</a> | <a href="">How</a> | <a href="">What</a> | <a href="">BecomeLeader</a> | <a href="">Team</a> | <a href="">Blog</a> | <a href="">FAQ</a>
+      <div fxFlex fxHide.xs="true">
+        <a id="why" href="">Why</a> | <a href="">How</a> | <a href="">What</a> | <a href="">Contact</a> | <a href="">Team</a> | <a href="">Blog</a> | <a href="">FAQ</a>&emsp;<a href="">Sign In</a>
       </div>
-      <div fxFlex>
-        <a href="">Sign In</a>
-      </div>
-      <div class="pull-right call-us" fxFlex>
+      <div class="pull-right call-us" fxFlex fxHide.xs="true">
         Call us: <a href="tel:8886043188">888.604.3188</a>
       </div>
     </div>
   </mat-toolbar-row>
 </mat-toolbar>
+
+<!-- Responsive Sign In / Join / Company / Developer -->
+<div *ngIf="isMenuDisplayed">
+  <div fxFlexLayout="column">
+    <div class="responsive-option" fxFlex><a class="bold" href="">Sign In</a></div>
+  </div>
+  <div fxFlexLayout="column">
+    <div class="responsive-option" fxFlex><a class="bold" href="">Join Toptal</a></div>
+  </div>
+  <div fxFlexLayout="column">
+    <div class="responsive-option" fxFlex><a class="bold" href="">Company</a></div>
+  </div>
+  <div fxFlexLayout="column">
+    <div class="responsive-option" fxFlex><a class="bold" href="">Developer</a></div>
+  </div>
+  <div fxFlexLayout="column">
+    <div class="responsive-option" fxFlex><a href="">Why</a></div>
+  </div>
+  <div fxFlexLayout="column">
+    <div class="responsive-option" fxFlex><a href="">How</a></div>
+  </div>
+  <div fxFlexLayout="column">
+    <div class="responsive-option" fxFlex><a href="">What</a></div>
+  </div>
+  <div fxFlexLayout="column">
+    <div class="responsive-option" fxFlex><a href="">Contact</a></div>
+  </div>
+  <div fxFlexLayout="column">
+    <div class="responsive-option" fxFlex><a href="">Team</a></div>
+  </div>
+  <div fxFlexLayout="column">
+    <div class="responsive-option" fxFlex><a href="">Blog</a></div>
+  </div>
+  <div fxFlexLayout="column">
+    <div class="responsive-option" fxFlex><a href="">FAQ</a></div>
+  </div>
+</div>
+  
