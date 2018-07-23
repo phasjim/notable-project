@@ -14,6 +14,7 @@ import { FooterComponent } from './footer/footer.component';
 import { BodyComponent } from './body/body.component';
 import { JoinLeadersComponent } from './body/join-leaders/join-leaders.component';
 import { MeetTeamComponent } from './body/meet-team/meet-team.component';
+import { ContactComponent } from './body/contact/contact.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { MeetTeamComponent } from './body/meet-team/meet-team.component';
     FooterComponent,
     BodyComponent,
     JoinLeadersComponent,
-    MeetTeamComponent
+    MeetTeamComponent,
+    ContactComponent
   ],
   imports: [
     BrowserModule,
