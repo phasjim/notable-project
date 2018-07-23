@@ -18,6 +18,7 @@ import { JoinLeadersComponent } from './body/join-leaders/join-leaders.component
 import { MeetTeamComponent } from './body/meet-team/meet-team.component';
 import { BecomeLeaderComponent } from './body/become-leader/become-leader.component';
 import { ContactComponent } from './body/become-leader/contact/contact.component';
+import { SampleProfilesComponent } from './body/sample-profiles/sample-profiles.component';
 
 @NgModule({
   declarations: [
@@ -28,7 +29,8 @@ import { ContactComponent } from './body/become-leader/contact/contact.component
     JoinLeadersComponent,
     MeetTeamComponent,
     BecomeLeaderComponent,
-    ContactComponent
+    ContactComponent,
+    SampleProfilesComponent
   ],
   imports: [
     BrowserModule,
