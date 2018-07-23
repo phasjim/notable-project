@@ -7,9 +7,7 @@
     text-shadow: $text-shadow;
 
     /* Sticks footer to the bottom */
-    position: absolute;
-    width: 100%;
-    bottom: 0;
+    margin-top: 100px;
 
     a {
       color: $white;

@@ -13,6 +13,7 @@ import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
 import { BodyComponent } from './body/body.component';
 import { JoinToptalLeadersComponent } from './body/join-toptal-leaders/join-toptal-leaders.component';
+import { MeetTeamComponent } from './body/meet-team/meet-team.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { JoinToptalLeadersComponent } from './body/join-toptal-leaders/join-topt
     HeaderComponent,
     FooterComponent,
     BodyComponent,
-    JoinToptalLeadersComponent
+    JoinToptalLeadersComponent,
+    MeetTeamComponent
   ],
   imports: [
     BrowserModule,

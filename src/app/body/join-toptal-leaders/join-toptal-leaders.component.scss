@@ -1,5 +1,7 @@
+@import '../../../styles/variables';
+
 .join-toptal-container {
-  margin-top: 50px;
+  margin-top: $top-spacing;
 }
 
 .join-section {
@@ -20,7 +22,7 @@
 }
 
 .image-section {
-  margin-top: 50px;
+  margin-top: $top-spacing;
 }
 
 .why-image {
