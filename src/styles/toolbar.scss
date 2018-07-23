@@ -81,4 +81,20 @@
       text-decoration: none;
     }
   }
+
+  .call-us-responsive {
+    background-color: $toolbar-white;
+    padding: 5px 16px;
+    color: $toolbar-link-join;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 13px;
+
+    a {
+      color: $toolbar-link-join;
+      font-weight: bold;
+      text-decoration: underline;
+      text-decoration-color: $toolbar-light-gray;
+    }
+  }
 }

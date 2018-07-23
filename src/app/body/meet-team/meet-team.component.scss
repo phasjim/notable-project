@@ -3,13 +3,17 @@
 .team-section {
   margin-top: $top-spacing;
 
-  .team-image {
-    background-image: url('/assets/team-member.png');
-    border-radius: 4px;
-    width: 124px;
-    height: 124px;
-    margin: 0 auto;
-    margin-bottom: 15px;
+  .team-image-container {
+    padding-bottom: 20px;
+
+    .team-image {
+      background-image: url('/assets/team-member.png');
+      border-radius: 4px;
+      width: 124px;
+      height: 124px;
+      margin: 0 auto;
+      margin-bottom: 15px;
+    }
   }
 
   .name {

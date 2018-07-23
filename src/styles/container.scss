@@ -28,8 +28,8 @@ $break-large: 1024px;
     margin-top: $top-spacing;
   }
   @include respond-to(medium-screens) {
-    width: 100%;
-    margin: 0;
+    width: 90%;
+    margin: 0 5%;
     margin-top: $top-spacing;
   }
   @include respond-to(wide-screens) {
