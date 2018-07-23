@@ -12,5 +12,13 @@
     color: $white;;
     font-weight: bold;
     text-shadow: $text-shadow;
+
+    &.lg-button {
+      font-size: 16px;
+      font-weight: $font-light-weight;
+      text-transform: none;
+      padding: 16px 20px;
+      width: 100%;
+    }
   }
 }

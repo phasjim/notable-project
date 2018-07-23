@@ -1,31 +1,36 @@
 <div fxLayout="row" fxLayoutGap="10px">
-  <mat-form-field fxFlex="50%">
-    <input matInput placeholder="Name">
+  <mat-form-field fxFlex="50%" appearance="outline">
+    <mat-label>Name</mat-label>
+    <input matInput>
   </mat-form-field>
 
-  <mat-form-field fxFlex="50%">
-    <input matInput placeholder="Email">
-  </mat-form-field>
-</div>
-
-<div fxLayout="row" fxLayoutGap="10px">
-  <mat-form-field fxFlex="50%">
-    <input matInput placeholder="City & Country">
-  </mat-form-field>
-
-  <mat-form-field fxFlex="50%">
-    <input matInput placeholder="Twitter">
+  <mat-form-field fxFlex="50%" appearance="outline">
+    <mat-label>Email</mat-label>
+    <input matInput>
   </mat-form-field>
 </div>
 
 <div fxLayout="row" fxLayoutGap="10px">
-  <mat-form-field fxFlex="100%">
-    <textarea matInput placeholder="Comment"></textarea>
+  <mat-form-field fxFlex="50%" appearance="outline">
+    <mat-label>City & Country</mat-label>
+    <input matInput>
+  </mat-form-field>
+
+  <mat-form-field fxFlex="50%" appearance="outline">
+    <mat-label>Twitter</mat-label>
+    <input matInput>
+  </mat-form-field>
+</div>
+
+<div fxLayout="row" fxLayoutGap="10px">
+  <mat-form-field fxFlex="100%" appearance="outline">
+    <mat-label>Comment</mat-label>
+    <textarea matInput></textarea>
   </mat-form-field>
 </div>
 
 <div fxLayout="row">
-  <div fxFlexOffset="75%" fxFlex="25%">
-    <button mat-button>Submit</button>
+  <div fxFlexOffset="75%" fxFlex="25%" appearance="outline">
+    <button class="lg-button" mat-button>Submit</button>
   </div>
 </div>
