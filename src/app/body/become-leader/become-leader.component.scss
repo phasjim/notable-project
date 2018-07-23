@@ -1,0 +1,28 @@
+@import '../../../styles/variables';
+
+.banner-image {
+  width: calc(100% + 32px);
+  height: 315px;
+  margin: $top-spacing 0 0 -16px;
+
+  background-image: url('/assets/export_leaders.png');
+  background-repeat: repeat;
+  background-size: auto 100%;
+
+  .banner-text-container {
+    background-color: $black-transluscent;
+    position: relative;
+    width: 100%;
+    height: 100%;
+
+    color: $white;
+    font-size: 39px;
+    line-height: 50px;
+    text-shadow: $text-shadow;
+    text-align: center;
+  }
+}
+
+.become-leader-container {
+  margin-top: $top-spacing;
+}
