@@ -5,6 +5,8 @@ import { FlexLayoutModule } from '@angular/flex-layout';
 
 import {
   MatButtonModule,
+  MatFormFieldModule,
+  MatInputModule,
   MatToolbarModule
 } from '@angular/material';
 
@@ -34,6 +36,8 @@ import { ContactComponent } from './body/become-leader/contact/contact.component
     FlexLayoutModule,
 
     MatButtonModule,
+    MatFormFieldModule,
+    MatInputModule,
     MatToolbarModule
   ],
   providers: [],
