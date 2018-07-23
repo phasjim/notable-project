@@ -6,6 +6,11 @@
     padding: 70px 16px;
     text-shadow: $text-shadow;
 
+    /* Sticks footer to the bottom */
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+
     a {
       color: $white;
       text-decoration: none;

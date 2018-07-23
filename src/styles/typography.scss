@@ -1,16 +1,24 @@
 body {
   font-family: $font-family;
+  font-weight: $font-light-weight;
   color: $toptal-light-gray;
   font-size: 15px;
   line-height: 20px;
 }
 
+a {
+  font-family: $font-family;
+}
+
 h1 {
+  font-family: $font-family;
   color: $toptal-blue;
   text-align: center;
 }
 
 h2 {
+  font-family: $font-family;
+  font-weight: $font-light-weight !important;
   font-size: 18px;
   color: $toptal-gray;
   font-weight: normal;
