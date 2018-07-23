@@ -10,8 +10,13 @@ a {
   font-family: $font-family;
 }
 
+b {
+  font-weight: $font-bold-weight; 
+}
+
 h1 {
   font-family: $font-family;
+  font-weight: $font-bold-weight;
   color: $toptal-blue;
   text-align: center;
 }
