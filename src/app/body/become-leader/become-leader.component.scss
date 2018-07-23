@@ -26,8 +26,11 @@
 .become-leader-container {
   margin-top: $top-spacing;
 
+  .become-leader-text {
+    margin-bottom: $top-spacing;
+  }
+  
   .contact-container {
-    margin-top: $top-spacing;
     width: 70%;
     margin: 0 15%;
   }

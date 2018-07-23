@@ -1,0 +1,38 @@
+.toptal-app {
+  .mat-form-field-outline {
+    font-size: 16px;
+    padding: 15px 20px;
+    border-radius: 4px;
+    border: 1px solid $input-border;
+    border-width: 1px !important;
+    background-color: $input-background;
+
+    .mat-form-field-infix {
+      padding: 0.9em 0 1.4em 0;
+    }
+  }
+
+  .mat-form-field-outline-start,
+  .mat-form-field-outline-gap,
+  .mat-form-field-outline-end {
+    border: 0 !important;
+  }
+
+  .mat-focused .mat-form-field-label {
+    color: $toptal-blue;
+  }
+
+  .mat-empty .mat-form-field-label,
+  .mat-empty mat-label {
+    font-size: 16px;
+    color: $input-placeholder !important;
+    animation: none !important;
+    transition: none !important;
+    transform: none !important;
+
+    span {
+      color: $input-icon !important;
+    }
+  }
+  
+}
