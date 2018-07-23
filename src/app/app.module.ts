@@ -12,7 +12,7 @@ import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
 import { BodyComponent } from './body/body.component';
-import { JoinToptalLeadersComponent } from './body/join-toptal-leaders/join-toptal-leaders.component';
+import { JoinLeadersComponent } from './body/join-leaders/join-leaders.component';
 import { MeetTeamComponent } from './body/meet-team/meet-team.component';
 
 @NgModule({
@@ -21,7 +21,7 @@ import { MeetTeamComponent } from './body/meet-team/meet-team.component';
     HeaderComponent,
     FooterComponent,
     BodyComponent,
-    JoinToptalLeadersComponent,
+    JoinLeadersComponent,
     MeetTeamComponent
   ],
   imports: [

@@ -1,20 +1,20 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { JoinToptalLeadersComponent } from './join-toptal-leaders.component';
+import { JoinLeadersComponent } from './join-leaders.component';
 
-describe('JoinToptalLeadersComponent', () => {
-  let component: JoinToptalLeadersComponent;
-  let fixture: ComponentFixture<JoinToptalLeadersComponent>;
+describe('JoinLeadersComponent', () => {
+  let component: JoinLeadersComponent;
+  let fixture: ComponentFixture<JoinLeadersComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ JoinToptalLeadersComponent ]
+      declarations: [ JoinLeadersComponent ]
     })
     .compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(JoinToptalLeadersComponent);
+    fixture = TestBed.createComponent(JoinLeadersComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
