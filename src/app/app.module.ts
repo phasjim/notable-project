@@ -2,6 +2,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { NgModule } from '@angular/core';
 import { FlexLayoutModule } from '@angular/flex-layout';
+import { FormsModule } from '@angular/forms';
 
 import {
   MatButtonModule,
@@ -38,6 +39,7 @@ import { CarouselComponent } from './body/join-leaders/carousel/carousel.compone
     BrowserModule,
     BrowserAnimationsModule,
     FlexLayoutModule,
+    FormsModule,
 
     MatButtonModule,
     MatFormFieldModule,

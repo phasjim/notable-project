@@ -1,37 +1,37 @@
 <div fxLayout="row" fxLayoutGap="10px" fxLayout.xs="column" fxLayoutGap.xs="0">
   <mat-form-field fxFlex="50%" fxFlex.xs="100%" appearance="outline">
     <mat-label><span class="fas fa-fw fa-user"></span>&ensp;Name</mat-label>
-    <input matInput>
+    <input matInput [(ngModel)]="formName">
   </mat-form-field>
 
   <mat-form-field fxFlex="50%" fxFlex.xs="100%" appearance="outline">
     <mat-label><span class="fas fa-fw fa-envelope"></span>&ensp;Email</mat-label>
-    <input matInput>
+    <input matInput [(ngModel)]="formEmail">
   </mat-form-field>
 </div>
 
 <div fxLayout="row" fxLayoutGap="10px" fxLayout.xs="column" fxLayoutGap.xs="0">
   <mat-form-field fxFlex="50%" fxFlex.xs="100%" appearance="outline">
     <mat-label><span class="fas fa-fw fa-map-marker-alt"></span>&ensp;City & Country</mat-label>
-    <input matInput>
+    <input matInput [(ngModel)]="formCityAndCountry">
   </mat-form-field>
 
   <mat-form-field fxFlex="50%" fxFlex.xs="100%" appearance="outline">
     <mat-label><span class="fab fa-fw fa-twitter"></span>&ensp;Twitter</mat-label>
-    <input matInput>
+    <input matInput [(ngModel)]="formTwitter">
   </mat-form-field>
 </div>
 
 <div fxLayout="row" fxLayoutGap="10px" fxLayout.xs="column" fxLayoutGap.xs="0">
   <mat-form-field fxFlex="100%" fxFlex.xs="100%" appearance="outline">
     <mat-label><span class="fas fa-fw fa-flip-horizontal fa-comment-alt"></span>&ensp;Comment</mat-label>
-    <textarea rows="4" matInput></textarea>
+    <textarea rows="4" matInput [(ngModel)]="formComment"></textarea>
   </mat-form-field>
 </div>
 
 <div fxLayout="row">
   <div fxFlexOffset="75%" fxFlex="25%"
        fxFlexOffset.xs="0" fxFlex.xs="100%">
-    <button class="lg-button" mat-button>Submit</button>
+    <button class="lg-button" mat-button (click)="onSubmit()">Submit</button>
   </div>
 </div>
