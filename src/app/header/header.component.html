@@ -21,8 +21,8 @@
            fxHide
            fxHide.xs="false"
            fxFlex>
-        <a (click)="onDisplayMenuClick(true)" *ngIf="!isMenuDisplayed"><span class="fas fa-fw fa-lg fa-bars"></span></a>
-        <a (click)="onDisplayMenuClick(false)" *ngIf="isMenuDisplayed"><span class="fas fa-fw fa-lg fa-times"></span></a>
+        <a class="menu-link" (click)="onDisplayMenuClick(true)" *ngIf="!isMenuDisplayed"><span class="fas fa-fw fa-lg fa-bars"></span></a>
+        <a class="menu-link" (click)="onDisplayMenuClick(false)" *ngIf="isMenuDisplayed"><span class="fas fa-fw fa-lg fa-times"></span></a>
       </div>
     </div>
   </mat-toolbar-row>
@@ -41,7 +41,7 @@
 </mat-toolbar>
 
 <!-- Responsive Sign In / Join / Company / Developer -->
-<div *ngIf="isMenuDisplayed">
+<div *ngIf="isMenuDisplayed" fxHide fxHide.xs="false">
   <div fxFlexLayout="column">
     <div class="responsive-option" fxFlex><a class="bold" href="">Sign In</a></div>
   </div>
