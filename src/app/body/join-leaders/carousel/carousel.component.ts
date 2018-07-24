@@ -6,6 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./carousel.component.scss']
 })
 export class CarouselComponent implements OnInit {
+  imageList: number[] = [1,2,3,4,5,6,7,8,9,10];
   imageIndex: number = 1;
   recentlyClicked: boolean = false;
 
@@ -20,8 +21,17 @@ export class CarouselComponent implements OnInit {
     }, 1000*5); // Advances picture every 5 seconds
   }
 
+  isCurrent(index: number) {
+    return index === this.imageIndex;
+  }
+
   getImageSrc() {
     return '/assets/carousel/' + this.imageIndex + '.png';
+  }
+
+  onClickImageIndex(index: number) {
+    this.imageIndex = index;
+    this.recentlyClicked = true;
   }
 
   onBackClick() {

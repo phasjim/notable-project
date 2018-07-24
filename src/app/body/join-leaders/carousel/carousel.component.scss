@@ -25,3 +25,25 @@
   }
 
 }
+
+.dots-container {
+  cursor: pointer;
+  padding-top: 10px;
+  text-align: center;
+
+  .dot {
+    font-size: 8px;
+    padding: 0 5px;
+    transition: 0.2s ease;
+    opacity: 0.5;
+
+    &:hover {
+      opacity: 1;
+    }
+
+    &.current {
+      color: $toptal-blue;
+      opacity: 0.8;
+    }
+  }
+}

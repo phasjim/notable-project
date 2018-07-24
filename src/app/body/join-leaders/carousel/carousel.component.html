@@ -12,3 +12,12 @@
   <!-- Right -->
   <div fxFlex="5"><span (click)="onNextClick()" class="controls fas fa-chevron-right"></span></div>
 </div>
+
+<div class="dots-container"
+     fxLayout="row"
+     fxLayoutAlign="center">
+  <span *ngFor="let dot of imageList; let i = index;"
+        [ngClass]="{'current': isCurrent(i + 1)}"
+        (click)="onClickImageIndex(i + 1)"
+        class="dot fas fa-circle"></span>
+</div>
