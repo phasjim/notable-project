@@ -1,0 +1,27 @@
+@import '../../../../styles/variables';
+@import '../../../../styles/container';
+
+.carousel-container {
+  text-align: center;
+  padding-top: $top-spacing;
+
+  .controls {
+    cursor: pointer;
+    opacity: 0.5;
+    transition: 0.2s ease;
+
+    &:hover {
+      opacity: 1;
+    }
+  }
+  .image-container {
+    text-align: center;
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain
+    }
+  }
+
+}
