@@ -2,7 +2,7 @@
      fxLayout="row"
      fxLayoutAlign="center center">
   <!-- Left -->
-  <div fxFlex="10"><span (click)="onBackClick()" class="controls fas fa-chevron-left"></span></div>
+  <div fxFlex="10" class="left"><span (click)="onBackClick()" class="controls fas fa-chevron-left"></span></div>
   
   <!-- Image -->
   <div fxFlex class="image-container">
@@ -14,10 +14,11 @@
   </div>
   
   <!-- Right -->
-  <div fxFlex="10"><span (click)="onNextClick()" class="controls fas fa-chevron-right"></span></div>
+  <div fxFlex="10" class="right"><span (click)="onNextClick()" class="controls fas fa-chevron-right"></span></div>
 </div>
 
-<div class="dots-container"
+<div fxHide.xs="true"
+     class="dots-container"
      fxLayout="row"
      fxLayoutAlign="center">
   <span *ngFor="let dot of imageList; let j = index;"
