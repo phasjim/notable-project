@@ -3,12 +3,14 @@
 
 .carousel-container {
   text-align: center;
-  padding-top: $top-spacing;
+  margin-top: $top-spacing;
+  height: 350px;
 
   .controls {
     cursor: pointer;
     opacity: 0.5;
     transition: 0.2s ease;
+    font-size: 20px;
 
     &:hover {
       opacity: 1;
@@ -20,7 +22,8 @@
     img {
       width: 100%;
       height: 100%;
-      object-fit: contain
+      max-height: 350px;
+      object-fit: contain;
     }
   }
 

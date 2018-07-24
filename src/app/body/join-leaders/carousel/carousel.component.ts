@@ -1,9 +1,20 @@
 import { Component, OnInit } from '@angular/core';
+import { trigger, style, animate, transition } from '@angular/animations';
 
 @Component({
   selector: 'app-carousel',
   templateUrl: './carousel.component.html',
-  styleUrls: ['./carousel.component.scss']
+  styleUrls: ['./carousel.component.scss'],
+  animations: [
+    trigger(
+      'enterAnimation', [
+        transition(':enter', [
+          style({opacity: 0}),
+          animate('50ms', style({opacity: 1}))
+        ])
+      ]
+    )
+  ]
 })
 export class CarouselComponent implements OnInit {
   imageList: number[] = [1,2,3,4,5,6,7,8,9,10];
@@ -18,15 +29,15 @@ export class CarouselComponent implements OnInit {
         this.onNextClick();
       }
       this.recentlyClicked = false;
-    }, 1000*5); // Advances picture every 5 seconds
+    }, 1000*7); // Advances picture every 7 seconds
   }
 
   isCurrent(index: number) {
     return index === this.imageIndex;
   }
 
-  getImageSrc() {
-    return '/assets/carousel/' + this.imageIndex + '.png';
+  getImageSrc(index: number) {
+    return '/assets/carousel/' + index + '.png';
   }
 
   onClickImageIndex(index: number) {

@@ -2,22 +2,26 @@
      fxLayout="row"
      fxLayoutAlign="center center">
   <!-- Left -->
-  <div fxFlex="5"><span (click)="onBackClick()" class="controls fas fa-chevron-left"></span></div>
+  <div fxFlex="10"><span (click)="onBackClick()" class="controls fas fa-chevron-left"></span></div>
   
   <!-- Image -->
   <div fxFlex class="image-container">
-    <img [src]="getImageSrc()">
+    <div style="margin: auto" *ngFor="let img of imageList; let i = index;">
+      <img *ngIf="isCurrent(i + 1)"
+            [src]="getImageSrc(i + 1)"
+            [@enterAnimation]>
+    </div>
   </div>
   
   <!-- Right -->
-  <div fxFlex="5"><span (click)="onNextClick()" class="controls fas fa-chevron-right"></span></div>
+  <div fxFlex="10"><span (click)="onNextClick()" class="controls fas fa-chevron-right"></span></div>
 </div>
 
 <div class="dots-container"
      fxLayout="row"
      fxLayoutAlign="center">
-  <span *ngFor="let dot of imageList; let i = index;"
-        [ngClass]="{'current': isCurrent(i + 1)}"
-        (click)="onClickImageIndex(i + 1)"
+  <span *ngFor="let dot of imageList; let j = index;"
+        [ngClass]="{'current': isCurrent(j + 1)}"
+        (click)="onClickImageIndex(j + 1)"
         class="dot fas fa-circle"></span>
 </div>
