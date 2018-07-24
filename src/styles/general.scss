@@ -13,6 +13,10 @@ body {
   }
 }
 
+a {
+  transition: 0.2s ease;
+}
+
 /* Utility Classes */
 .pull-right {
   text-align: right;

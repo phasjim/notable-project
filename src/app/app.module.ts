@@ -19,6 +19,7 @@ import { MeetTeamComponent } from './body/meet-team/meet-team.component';
 import { BecomeLeaderComponent } from './body/become-leader/become-leader.component';
 import { ContactComponent } from './body/become-leader/contact/contact.component';
 import { SampleProfilesComponent } from './body/sample-profiles/sample-profiles.component';
+import { CarouselComponent } from './body/join-leaders/carousel/carousel.component';
 
 @NgModule({
   declarations: [
@@ -30,7 +31,8 @@ import { SampleProfilesComponent } from './body/sample-profiles/sample-profiles.
     MeetTeamComponent,
     BecomeLeaderComponent,
     ContactComponent,
-    SampleProfilesComponent
+    SampleProfilesComponent,
+    CarouselComponent
   ],
   imports: [
     BrowserModule,
