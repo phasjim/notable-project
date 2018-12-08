@@ -1,5 +1,4 @@
-<div fxLayout="column">
-  <app-header fxFlex></app-header>
-  <app-body fxFlex></app-body>
-  <app-footer fxFlex></app-footer>
+<div class="app-container" fxLayout="row">
+  <app-physicians-list [physicians]="physicians" (selectedPhysician)="onChangeSelectedPhysician($event)"></app-physicians-list>
+  <app-schedule [displayedPhysician]="selectedPhysician"></app-schedule>
 </div>

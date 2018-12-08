@@ -1,7 +1,7 @@
-.toptal-app {
+.notable-app {
   .mat-toolbar {
     background-color: $toolbar-white;
-    color: $toptal-blue;
+    color: $notable-blue;
     border-top: solid 4px transparent;
     -moz-border-image: -moz-linear-gradient(left, $toolbar-border-top);
     -webkit-border-image: -webkit-linear-gradient(left, $toolbar-border-top);
@@ -42,7 +42,7 @@
         opacity: 0.8;
       }
 
-      &.join-toptal {
+      &.join-notable {
         color: $toolbar-link-join;
       }
     }
@@ -85,7 +85,7 @@
 
     a {
       text-transform: uppercase;
-      color: $toptal-gray;
+      color: $notable-gray;
       text-decoration: none;
     }
   }

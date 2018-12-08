@@ -12,10 +12,14 @@ import {
 } from '@angular/material';
 
 import { AppComponent } from './app.component';
+import { PhysiciansListComponent } from './physicians-list/physicians-list.component';
+import { ScheduleComponent } from './schedule/schedule.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    PhysiciansListComponent,
+    ScheduleComponent
   ],
   imports: [
     BrowserModule,
