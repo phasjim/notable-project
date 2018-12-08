@@ -12,28 +12,10 @@ import {
 } from '@angular/material';
 
 import { AppComponent } from './app.component';
-import { HeaderComponent } from './header/header.component';
-import { FooterComponent } from './footer/footer.component';
-import { BodyComponent } from './body/body.component';
-import { JoinLeadersComponent } from './body/join-leaders/join-leaders.component';
-import { MeetTeamComponent } from './body/meet-team/meet-team.component';
-import { BecomeLeaderComponent } from './body/become-leader/become-leader.component';
-import { ContactComponent } from './body/become-leader/contact/contact.component';
-import { SampleProfilesComponent } from './body/sample-profiles/sample-profiles.component';
-import { CarouselComponent } from './body/join-leaders/carousel/carousel.component';
 
 @NgModule({
   declarations: [
-    AppComponent,
-    HeaderComponent,
-    FooterComponent,
-    BodyComponent,
-    JoinLeadersComponent,
-    MeetTeamComponent,
-    BecomeLeaderComponent,
-    ContactComponent,
-    SampleProfilesComponent,
-    CarouselComponent
+    AppComponent
   ],
   imports: [
     BrowserModule,
