@@ -1,0 +1,29 @@
+<div class="schedule-container">
+  <div class="empty-state-container" *ngIf="!displayedPhysician">
+    Please select a phyisician to display schedule
+  </div>
+  <div *ngIf="displayedPhysician">
+    <h1>
+      {{displayedPhysician?.firstname}} {{displayedPhysician?.lastname}}
+    </h1>
+    
+    {{displayedPhysician?.email}}
+    
+    <br><br>
+
+    <table class="patient-table">
+      <tr>
+        <th class="number-col">#</th>
+        <th class="name-col">Name</th>
+        <th class="time-col">Time</th>
+        <th class="kind-col">Kind</th>
+      </tr>
+      <tr *ngFor="let patient of displayedPhysician.patients; let i = index">
+        <td class="number-col">{{i+1}}</td>
+        <td class="name-col">{{patient?.name}}</td>
+        <td class="time-col">{{patient?.time}}</td>
+        <td class="kind-col">{{patient?.kind}}</td>
+      </tr>
+    </table>
+  </div>
+</div>

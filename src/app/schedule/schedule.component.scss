@@ -1,0 +1,43 @@
+@import '../../styles/variables';
+
+.schedule-container {
+  width: 100%;
+  min-width: 600px;
+  height: 100%;
+  padding: 20px;
+}
+
+.empty-state-container {
+  color: gray;
+}
+
+.patient-table {
+  width: 100%;
+
+  td, th {
+    padding: 10px;
+    text-align: left;
+  }
+
+  th {
+    background-color: $notable-blue;
+    color: $white;
+  }
+
+  tr:nth-child(odd) {
+    background-color: #f5f3f7;
+  }
+
+  .number-color {
+    width: 10%;
+  }
+  .name-col {
+    width: 30%;
+  }
+  .time-col {
+    width: 30%;
+  }
+  .kind-col {
+    width: 30%;
+  }
+}
