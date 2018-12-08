@@ -7,16 +7,21 @@ import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
 })
 export class PhysiciansListComponent implements OnInit {
   @Input() physicians: any[];
-  @Output() selectedPhysician = new EventEmitter();
-
+  @Output() outputPhysician = new EventEmitter();
+  selectedPhysician: any;
 
   constructor() { }
 
   ngOnInit() {
   }
 
+  ifSelectedPhysician(physician) {
+    return physician === this.selectedPhysician;
+  }
+
   onClickPhysician(physician) {
-    this.selectedPhysician.emit(physician);
+    this.selectedPhysician = physician;
+    this.outputPhysician.emit(physician);
   }
 
   onLogout() {

@@ -4,13 +4,13 @@
   <b>PHYSICIANS</b>
   <ul *ngIf="physicians.length > 0">
     <li *ngFor="let physician of physicians">
-      <a (click)="onClickPhysician(physician)">
+      <a [class.selected]="ifSelectedPhysician(physician)" (click)="onClickPhysician(physician)">
         {{physician?.lastname}}, {{physician?.firstname}}
       </a>
     </li>
   </ul>
 
   <br><br>
-  
+
   <button class="lg-button" mat-button (click)="onLogout()">Log Out</button> 
 </div>
